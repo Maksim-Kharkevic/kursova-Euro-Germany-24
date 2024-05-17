@@ -1,0 +1,718 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title><UEFA-EURO-2024></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width",
+intial-scale="1.0">
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<link rel="stylesheet" href="./css/jquery.dmenu.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+
+
+<script>
+	// Генеруємо випадковий рахунок матчу
+	function generateRandomScore() {
+		return Math.floor(Math.random() * 6) + '-' + Math.floor(Math.random() * 6);
+	}
+
+	// Отримуємо елемент рахунку
+	var scoreElement = document.getElementById('score');
+
+	// Генеруємо та встановлюємо випадковий рахунок матчу
+	scoreElement.textContent = generateRandomScore();
+</script>
+
+</head>
+<body>
+	<section id="section-menu">
+		<div class="container">
+			<nav id="menu">
+				<ul>
+                    <li><a href="#">Головна</a></li>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				
+
+					<li class="SubmenuFullwidth">
+						<a href="#">переможці минулих Євро</a>
+						<ul>
+							<li>
+								<a href="#">Euro2020</a>
+								<ul>
+									<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIG5EiEFdAZZ0ybDaVo6Bv22jOhfZzLWRI207yxB0TCg&s" width="200"></li>
+									<li>1<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ITA.png?imwidth=36"  width="100"alt=""></a></li>
+									<li>2<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ENG.png?imwidth=36"  width="100"></a></li>
+									<li>3<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ESP.png?imwidth=75"  width="100"></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Euro2016</a>
+								<ul>
+									<li><img src="https://www.volynpost.com/img/modules/news/a/eb/aa4e1c1126df5e326fbbf8c8ecea9eba/top-photo.jpg" width="200"></li>
+									<li>1<a href=""><img src="https://img.uefa.com/imgml/flags/unl/POR.png?imwidth=36"  width="100" alt=""></a></li>
+									<li>2<a href=""><img src="https://img.uefa.com/imgml/flags/unl/FRA.png?imwidth=36" width="100"alt=""> </a></li>
+									<li>3<a href=""><img src="https://img.uefa.com/imgml/flags/unl/GER.png?imwidth=36"  width="100"alt=""></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Euro2012</a>
+								<ul>
+									<li><img src="https://www.bbc.co.uk/staticarchive/33b82591a51854c7ced6575f48ea15579a59c49e.jpg" width="200"></li>
+									<li>1<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ESP.png?imwidth=75" width="100" alt=""></a></li>
+									<li>2<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ITA.png?imwidth=36"  width="100"alt=""></a></li>
+									<li>3<a href=""><img src="https://img.uefa.com/imgml/flags/unl/POR.png?imwidth=36" width="100"alt=""></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Euro2008</a>
+								<ul>
+									<li><img src="https://gameshare.com.ua/images/150/150-UEFA-EURO-2008-0.jpg" width="200"></li>
+									<li>1<a href=""><img src="https://img.uefa.com/imgml/flags/unl/ESP.png?imwidth=75" width="100" alt=""></a></li>
+									<li>2<a href=""><img src="https://img.uefa.com/imgml/flags/unl/GER.png?imwidth=36" width="100" alt=""></a></li>
+									<li>3<a href=""><img src="https://img.uefa.com/imgml/flags/unl/NED.png?imwidth=36" width="100" alt=""></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Розпродаж</a></li>
+					<ul>
+						
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+					<li><a href="#">форум</a></li>
+					<li class="SubmenuMega"></li>
+					
+					</li>
+					<li><a href="#">Вибір мови </a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</section>
+		<!--start-container-->
+			<!--start-header-->
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!--start-top-nav-->
+			<!-- 	 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active m1"><a href="#">Головна</a></li>
+						<li class="page-scroll m2"><a href="#">Мотоцикли</a></li>
+						<li class="page-scroll m3"><a href="#">Розпродаж</a></li>
+						<li class="page-scroll m4"><a href="#">Форум</a></li>
+						<li class="page-scroll m5"><a href="#">Контакти</a></li>		
+						<li class="contatct-active m6" class="page-scroll"><a href="#"><img src="./images/flag-velikobritanii-union-jack.jpg" width="50" alt=""> eng </a></li>
+					</ul>
+					
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav> -->
+				<div class="clearfix"> </div>
+				<div class="slide-text text-center">
+					<h1>Euro Germany 24</h1>
+					<span>Ласкаво просимо шанувальників футболу</span>
+					<a class="slide-btn" href="#"> Матчі цього турніру
+					</a>
+					<span></span>				
+				</div>
+				<!--//End-top-nav-->
+			</div>
+		</div>
+		<!--//End-header-->
+		<!--start-feartures-->
+		<div id="fea" class="features">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span>Про Чемпіонат та переможців минулих Євро</h3>
+					<p id="about-moto"> Чемпіонат Європи з футболу 2024 року або Євро-2024 — 17-й чемпіонат Європи з футболу, який пройде з 14 червня до 14 липня 2024 року в Німеччині. Німеччину, як країну, що буде приймати турнір, виконком УЄФА обрав у вересні 2018 року на своєму засіданні.</p>
+					   </p>
+				</div>
+				<!-- start-features-grids-->
+				<div class="features-grids text-center ui-helper-reset ui-helper-clearfix">
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable1" class="ui-widget-content">
+						<img title="" nomer="1" price="400000" class="head-moto-img" id="img_1" src="https://img.uefa.com/imgml/flags/unl/FRA.png?imwidth=36" alt="Мотоцикл 1" />
+						<h3><a href="#">France<br></a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable2" class="ui-widget-content">
+						<img title="" nomer="2" price="200000" class="head-moto-img"  id="img_2" src="https://img.uefa.com/imgml/flags/unl/POR.png?imwidth=36" alt="Мотоцикл 2" />
+						<h3><a href="#">Portugal</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable3" class="ui-widget-content">
+						<img title="" nomer="3" price="300000" class="head-moto-img"  id="img_3" src="https://img.uefa.com/imgml/flags/unl/GER.png?imwidth=36" alt="Мотоцикл 3" />
+						<h3><a href="#">Germany</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable4" class="ui-widget-content">
+						<img title="" nomer="4" price="600000" class="head-moto-img"  id="img_4" src="https://img.uefa.com/imgml/flags/unl/ENG.png?imwidth=36" alt="Мотоцикл 4" />
+						<h3><a href="#">England</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable5" class="ui-widget-content">
+						<img title="" nomer="5" price="600000" class="head-moto-img"  id="img_5" src="https://img.uefa.com/imgml/flags/unl/DEN.png?imwidth=36" alt="Мотоцикл 4" />
+						<h3><a href="#">Denmark</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable6" class="ui-widget-content">
+						<img title="" nomer="6" price="600000" class="head-moto-img"  id="img_6" src="https://img.uefa.com/imgml/flags/unl/ITA.png?imwidth=36" alt="Мотоцикл 4" />
+						<h3><a href="#">Itali</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable7" class="ui-widget-content">
+						<img title="" nomer="7" price="600000" class="head-moto-img"  id="img_7" src="https://img.uefa.com/imgml/flags/unl/GRE.png?imwidth=36" alt="Мотоцикл 4" />
+						<h3><a href="#">Grece</a></h3>
+					</div>
+					<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable8" class="ui-widget-content">
+						<img title="" nomer="8" price="600000" class="head-moto-img"  id="img_8" src="https://img.uefa.com/imgml/flags/unl/ESP.png?imwidth=75" alt="Мотоцикл 4" />
+						<h3><a href="#">Spain</a></h3>
+					</div>
+						<div class="col-md-3 features-grid ui-widget-content ui-corner-tr" id="draggable9" class="ui-widget-content">
+						<img title="" nomer="9" price="600000" class="head-moto-img"  id="img_9" src="https://img.uefa.com/imgml/flags/unl/NED.png?imwidth=36" alt="Мотоцикл 4" />
+						<h3><a href="#">Nederlands</a></h3>
+					</div>
+				</div>
+				<!-- //End-features-grids-->
+		
+
+		
+			</div>
+		</div>	
+		<div id="koshik" >
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> Країни які ви вибрали</h3>
+					<p id="suma"></p>
+				</div>
+				<div class="koshik-wrapper ui-widget-content ui-state-default">
+				</div>
+				<div id="myclear" style="display: none;">Мотоциклів у вашому кошику: <span id="helmetsCount"><strong></strong></span>. Всього сума: <span id="helmetsSumm"><strong></strong></span> доларів.
+				</div>
+			</div>
+		</div>
+		<div class="features">
+			<div class="container">
+				<div class=" text-center head" >
+					<h3><span> </span> Рахунок матчів</h3>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Україна</th>
+								
+				
+							<th>Рахунок</th>
+							<th>США</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="country1"> <img src="https://www.5.ua/media/pictures/original/146560.jpg?t=1534932390"  width="80" height="48"alt=""> </td>
+							<td class="score" id="score"></td>
+							<td id="country2"> <img src="https://kapterka.com.ua/image/data/flagi/flag_usa-kupit-kiev.gif"  width="80" height="48" alt=""> </td>
+						</tr>
+					</tbody>
+				</table>
+				<script>
+					// Генеруємо випадковий рахунок матчу
+					function generateRandomScore() {
+						return Math.floor(Math.random() * 6) + '-' + Math.floor(Math.random() * 6);
+					}
+				
+					// Отримуємо елемент рахунку
+					var scoreElement = document.getElementById('score');
+				
+					// Генеруємо та встановлюємо випадковий рахунок матчу
+					scoreElement.textContent = generateRandomScore();
+				</script>
+			</div>
+		</div>
+			<div id="acr-moto">
+				<div class="container">
+					<div class="head text-center">
+						<h3><span> </span>Карта міст та стадіонів які будуть приймати  матчі</h3>
+					</div>
+					<div id="accordion">
+						<h3>Міста та стадіони</h3>
+						<div>
+							<img src="./images/ad_34654080_100c9d4bb1c85113_6_web.jpg" height="600" alt=""
+							<p>Формат цього відбору схожий на формат попередньої кваліфікації, в якому розігрується 20 з 23 путівок до фінального турніру, де приєднаються до господаря турніру — Німеччини. 53 команди-члена УЄФА, за результатами жеребкуванням, були поділені на 10 груп, серед яких 7 груп складається з 5 команд та 3 групи з 6 команд. Жеребкування групового етапу кваліфікації відбулося 9 жовтня 2022,[2] після завершення групового етапу Ліги націй 2022—23. Чотири учасники фіналу чотирьох Ліги націй 2023 будуть посіяні до груп, що складаються з 5 команд (щоб вони мали вікно для участі у фіналі чотирьох Ліги націй у червні 2023 року). Груповий етап кваліфікації пройде з березня до листопада 2023, Перший етап кваліфікації грається за круговою системою з матчами вдома та на виїзді з кожним суперником по групі у подвійних турах (по два матчі поспіль) у березні, червні, вересні, жовтні та листопаді 2023 року. 2-і кращі команди із кожної з 10 груп потрапляють до фінального турніру напряму.</p>
+							<ul>
+								<li>Leipzig</li>
+								<li>Hamburg</li>
+								<li>Muninch</li>
+								<li>Derlin</li>
+								<li>Cologne</li>
+								<li>Dortmunt</li>
+							</ul>
+						</div>
+						
+						<h3> Україна еа Євро-2024</h3>
+						<img src="https://static.apostrophe.ua/uploads/image/9d6c82a232c08cf079cafab7c8b5d901.jpg" width="1140"  height="600" alt="">
+						<p>
+							наша збірна здолала не простий шлях на вихід до євро 24
+							Наша група на євро </p>
+
+							<ul>
+								<li>Україна </li><img src="https://www.5.ua/media/pictures/original/146560.jpg?t=1534932390"  width="80" height="48" alt="">
+
+								<li>Румунія </li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/1200px-Flag_of_Romania.svg.png"  width="80" height="48"alt="">
+
+								<li>Словаччина </li><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"  width="80" height="48" alt="">
+
+								<li>Бельгія </li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1200px-Flag_of_Belgium.svg.png"  width="80" height="48" alt="" >
+							</ul>
+						
+		
+					</div>
+				</div>
+			</div>
+    
+
+
+		<!--//End-feartures-->
+		<!-- start-work-->
+		<div class="work">
+			<div class="container">
+				<div class=" text-center work-head" >
+					<h3><span> </span> Розрахунок вартості бутсів та екепіровки:</h3>
+				</div>				
+				<!-- form -->
+				<div class="col-md-12">
+					<form id="my_form" >
+						<div id="bigform">
+							<fieldset>
+								<!-- right-form -->
+								<div id="div_form_1">
+									<fieldset id="innerfieldset">
+										<legend>Додаткові опції	</legend>
+										<p><strong>Чи потрібні аксесуари на форми або бутси ?</strong></p>
+										<div id="format">
+											<input type="checkbox" value="sh" name="dop_oprions" id="shlem" />
+											<label for="shlem">Значки єворо та чемпіонату світу</label>
+											<input type="checkbox" value="bag" name="dop_oprions" id="bag" />
+											<label for="bag">брілки</label>
+											<input type="checkbox" value="od" name="dop_oprions" id="od" />
+											<label for="od">та номер   </label>
+										</div>
+										<br>
+										<p><strong>Чи потрібен клей дя звуття у разі їх порвання</strong></p>
+										<div id="radio">
+											<input type="radio" id="inch_yes" value="yes" name="inch" />
+											<label for="inch">Так</label>
+											<input type="radio" id="inch_no" value="no" name="inch" />
+											<label for="inch">Ні</label>
+										</div>
+									</fieldset>
+									<fieldset id="innerfieldset">
+										<legend>Обов'язкове опитування	</legend>
+										<div id="oput">
+										
+										<div id="radio">
+											<p><strong>Яку форму  хочете обрати?</strong></p>
+											<input type="radio" id="posv_yes" value="yes" name="posv" />
+											<label for="posv_yes">Зі своїм імям</label>
+											<input type="radio" id="posv_no" value="no" name="posv" />
+											<label for="posv_no">Імя відомого гравця</label>
+										</div>
+
+										
+										<div id="radio">
+											<p><strong>Який у Вас досвід перетримуванні мячі</strong></p>
+											<input type="radio" id="dosv_yes" value="yes" name="dosv" />
+											<label for="dosv_yes">Чудовий</label>
+											<input type="radio" id="dosv_no" value="no" name="dosv" />
+											<label for="dosv_no">Нормальний</label>
+											<input type="radio" id="dosv_no" value="no" name="dosv" />
+											<label for="dosv_no">Погано але не ображайтеся</label>
+										</div>
+
+										
+										<div id="radio">
+											<p><strong>Ви дуже добре стоїте на воротах </strong></p>
+											<input type="radio" id="speed_yes" value="yes" name="speed" />
+											<label for="speed_yes">Так</label>
+											<input type="radio" id="speed_no" value="no" name="speed" />
+											<label for="speed_no">Ні</label>
+										</div>
+
+										<div id="radio">
+											<p><strong>який мяч ви хочете обрати</strong></p>
+											<input type="radio" id="fam_yes" value="yes" name="fam" />
+											<label for="fam_yes">Чемпіонат світу</label>
+											<input type="radio" id="fam_no" value="no" name="fam" />
+											<label for="fam_no">Чемпіонат Євро</label>
+										</div>
+
+										
+										<div id="radio">
+											<p><strong>які щітки ви хочите обрати</strong></p>
+											<input type="radio" id="sigur_yes" value="yes" name="sigur" />
+											<label for="sigur_yes">Adidas</label>
+											<input type="radio" id="sigur_no" value="no" name="sigur" />
+											<label for="sigur_no">Puma</label>
+											<input type="radio" id="sigur_no" value="no" name="sigur" />
+											<label for="sigur_no">Nike</label>
+											<input type="radio" id="sigur_no" value="no" name="sigur" />
+											<label for="sigur_no">Predator</label>
+										</div>
+
+										
+										<p id="aswerCount">Дано відповідей 0 з 5</p>
+										<div id="progressbar"></div>
+									</div>
+									</fieldset>
+
+									<input type="submit" value="Відправити запит" id="my_button" />
+									<a href="#" id="clear_form">очистити форму </a>
+								</div>
+								<!-- left-form --> 
+								<div id="div_form_2">
+									<span>Модель бутс:</span>
+									<select name="moto" size="1" id="motoSelect">
+										<option value="1">Adidas</option>
+										<option value="2">Nike</option>
+										<option value="3">Puma</option>
+										<option value="4">Predator</option>
+									</select>
+									<br><br>
+									<span>час або день </span>
+									<div id="slider">
+										<div id="custom-handle" class="ui-slider-handle"></div>
+									</div>
+
+									<span>дата  відправки  та дата отримання посилки</span>
+									<input type="text" id="form" class="dstepicker" name="form" size="12">
+									<span>до</span>
+									<input type="text" id="to" class="dstepicker" name="to" size="12">
+									<br><br>
+									<div class="demo">
+										<p>
+											<label for="amount">Скільки плануєте чекати:</label>
+											<input type="text" id="amount" style="border:0; color:#000000; background-color: #E7E7F0;"/>
+										</p>
+										<div id="slider-range"></div>
+									</div> 
+
+									<div class="demo">
+										<p>
+											<label>В якій області плануєте отримати та купити </label>
+										</p>
+										<input id="tags"
+									</div>
+									<span>Днів:</span>
+									<select name="days" size="1" id="daysSelect">
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+									<br><br>
+									<p><strong>Вкажіть Ваш email:</strong></p>
+									<input type="text" id="email" value="Приклад: you@site.ua" /> 
+									<br><br>
+									<p><strong>Ваші побажання на рахунок товару :</strong></p>
+									<textarea cols="45" rows="2" id="mytextarea"></textarea>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+				</div>
+				<!-- end-form -->
+			</div>
+		</div>
+		<div id="shlem">
+            <div class="container">
+				<div class="head text-center">
+					<h3><span></span>Оберіть розмір бутсів</h3>
+				</div>
+                <div class="row">
+                    <form action="#">
+                        <div class="col-md-6">
+                            <!--  -->
+						<div id="circle"></div>
+                        </div>                      
+                        <div class="col-md-6">
+                            <fieldset>
+                                <!--  -->
+                            
+							
+							<Label for="radius">Pозмір бутс</Label>
+							<select name="radius" id="radius">
+								<option value="189">XXXS</option>
+								<option value="197">XXS</option>
+								<option value="204">XS</option>
+								<option value="212">S</option>
+								<option value="220">M</option>
+								<option value="227">L</option>
+								<option value="235">XL</option>
+								<option value="242">XXL</option>
+								<option value="250">XXXL</option>
+							</select>
+							<label for="color">колір та фірми бутс </label>
+							<select name="color" id="color">
+								<option value="black">Чорний</option>
+								<option value="red">Червоний</option>
+								<option value="yellow" selected >Жовтий</option>
+								<option value="blue">Синій</option>
+								<option value="green">Зелений</option>
+								<option value="silver">Сірий</option>
+								<option value="purple">Фіолетовий</option>
+							</select>
+						</fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>  
+		<!--start-blog-->
+		<div id="blog" class="blog">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> Оберіть свого улюбленого гравця </h3>
+				</div>
+			</div>
+			<!-- start-blog-time-line-->
+			<div class="blog-time-line">
+				<div class="col-md-6 blog-time-line-left">
+				</div>
+				<div class="col-md-6 blog-time-line-right">
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span class="nomer-blog-post"><label>1</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<span class="categorie">Вартіть : <a href="#">19000$</a></span>
+							<h4 class="post-head"><a href="#">Keven Debrune</a></h4>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span class="nomer-blog-post"><label>2</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<span class="categorie">Вартіть : <a href="#">14000$</a></span>
+							<h4 class="post-head"><a href="#">Kilian Mbappe </a></h4>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span class="nomer-blog-post"><label>3</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<span class="categorie">Вартіть : <a href="#">16200$</a></span>
+							<h4 class="post-head"><a href="#"> Harry Kane </a></h4>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span class="nomer-blog-post"><label>4</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<span class="categorie">Вартіть : <a href="#">29600$</a></span>
+							<h4 class="post-head"><a href="#">Van Dake</a></h4>
+						</div>
+		
+						<div class="clearfix"> </div>
+					</div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span class="nomer-blog-post"><label>5</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<span class="categorie">Вартіть : <a href="#">29600$</a></span>
+							<h4 class="post-head"><a href="#">Chesa</a></h4>
+						</div>
+		
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //End-blog-time-line-->
+		</div>
+		<!--//End-blog-->
+		<!--start-test-monials-->
+		<div class="container">
+			<div class="rov">
+				<div class="col-md-12">
+					<h2 class="text-center"></h2>
+					<div class="tabs">
+						<ul>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="head text-center">
+						<h3><span> </span> Додаткові опції</h3>
+
+
+
+
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1">
+						<h4>№</h4>
+						<ul id="number">
+							<li class="ui-state-default">1</li>
+							<li class="ui-state-default">2</li>
+							<li class="ui-state-default">3</li>
+							<li class="ui-state-default">4</li>
+							<li class="ui-state-default">5</li>
+							<li class="ui-state-default">6</li>
+							<li class="ui-state-default">7</li>
+							<li class="ui-state-default">8</li>
+						</ul>
+					</div>
+					<div class="col-lg-5">
+						<h4>Найсильніші країни європи:</h4>
+						<ul id="sortable">
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/250px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png" width="80" height="48" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width="80" height="48" alt="" /></li>
+							<li class="ui-state-default"><img src="https://www.5.ua/media/pictures/original/146560.jpg?t=1534932390"  width="80" height="48"alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png" width="80" height="48" alt="" /></li>
+							<li class="ui-state-default"><img src="https://kapterka.com.ua/image/cache/data/flagi/flag-austria-kupit-max-990.jpg" width="80" height="48" alt="" /></li> 
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg" width="80" height="48" alt="" /></li>
+							<li class="ui-state-default"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1200px-Flag_of_England.svg.png" width="80" height="48" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/250px-Flag_of_Turkey.svg.png" width="80" height="48" alt="" /></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6">
+						<h4>Виберіть країну за яку будите вболівати:</h4>
+						<ol id="selectable">
+							<li class="ui-state-default"><img src="https://www.5.ua/media/pictures/original/146560.jpg?t=1534932390" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/250px-Flag_of_Turkey.svg.png" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/250px-Flag_of_Albania.svg.png" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://kapterka.com.ua/image/cache/data/flagi/flag-austria-kupit-max-990.jpg" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1200px-Flag_of_England.svg.png" width="220" height="148" alt="" /></li>
+							<li class="ui-state-default"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" width="220" height="148" alt="" /></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+
+
+		<div  id="test" class="testmonials">
+			<div class="container">
+				<div class="head text-center">
+						<h3><span> </span> Посилання на сайти виробників форм та бутси</h3>
+				</div>
+			<!--start-link-->
+			<div class="test-monial-time-line">
+				<div class="col-md-6 test-monial-time-line-left">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
+						<div class="col-md-8 test-monial-time-line-left-text">
+						</div>
+						<div class="col-md-4 test-monial-time-line-left-pic">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUT_IF8dzeuoi3LNUncpNd1Ntcazf9nXoirkgpPjQlA&s"width="70" height="50" title="name" />
+							<a class="link-moto" target="blank" href="https://shop.shakhtar.com/butsi-puma-king-platinum-21-fg-ag/">Puma</a>
+						</div>
+						<span class="grid-point"> </span>
+					</div>
+				</div>
+				<div class="col-md-6 test-monial-time-line-right">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r1">
+						<div class="col-md-4 test-monial-time-line-left-pic">
+							<img src="https://loodibee.com/wp-content/uploads/Adidas-Logo.png"width="100" height="100" title="name" />
+							<a class="link-moto" target="blank" href="https://www.adidas.co.uk/football">Adidas</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r2">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="https://i.pinimg.com/736x/9d/0b/4b/9d0b4b9cbaba5226a76757b0e2e99367.jpg"width="100" height="100" title="name" />
+							<a class="link-moto" target="blank" href="https://www.nike.com/retail/directory/ukraine">Nike</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r2">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="https://i.pinimg.com/originals/cc/a4/f5/cca4f596a376e649546108f0988a82de.png"width="100" height="100" title="name" />
+							<a class="link-moto" target="blank" href="https://www.ea.com/en-gb/games/ea-sports-fc">FC Mobail</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="test-monial-timeline-connector">
+					<span> </span>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+			<!--//End-link-->
+			
+		<!--start-footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/Adidas.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/EA.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/cocacolazero.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/visitQatar.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/club/Heineken.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/Vivo.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/club/Visa_blu.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/Playstation_rounded_corners.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/team/Take-away_icon.png?imwidth=140" width="100" title="" />
+					<img src="https://img.uefa.com/imgml/uefacom/sponsors/club/bwin.png?imwidth=140" width="100" title="" />
+				</div>				
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+	
+
+		
+
+		<div id="dialog" title="Ваше замовлення">
+         <p>Ваше замовлення відправлено на оброблення. Очікуйте підтвердження</p>
+        </div>
+
+
+
+		<script src="./js/jquery-3.7.1.min.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/jquery.dmenu.js"></script>
+		<script src="./js/t12.js"></script>
+		<script src="./js/t13.js"></script>
+		<script src="./js/t14.js"></script>
+		<script src="./js/t11.js"></script>
+		<script src="./js/t10.js"></script>
+		<script src="./js/t8.js"></script>
+	</body>
+</html>
+
